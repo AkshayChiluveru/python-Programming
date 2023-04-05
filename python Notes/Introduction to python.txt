@@ -1,0 +1,6 @@
+compiler=> Translate high level to machine code(0's and 1's)
+programmer => set of instructions (humans should give)
+computer programming => is the process of creating a set of instructions that tell computers how to perform a given task.
+interpreter => line by line execution will be there.
+Types of programming languages
+static programming language are those languages in which we need to define or declare the types of data that we are using in our program.
