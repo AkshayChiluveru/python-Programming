@@ -4,3 +4,29 @@ computer programming => is the process of creating a set of instructions that te
 interpreter => line by line execution will be there.
 Types of programming languages
 static programming language are those languages in which we need to define or declare the types of data that we are using in our program.
+Dynamic programming language are those languages in which we need not to define the datatype at the runtime compiler will automatically analyze the datatype
+
+Python Programming: Python is a general purpose high level programming language.(General purpose=> commonnly use programming language)
+
+Machine Learning Algorithms => Scitkit learn
+Backend web Development => flask, Django, Tornado
+Data Science and Data Analysis => Numpy , Scipy , pandas
+Data Visualization => Matpotlib, Seaborn etc..
+Game => Pygame
+Desktop Application => Tkinter
+Deep Learning => Keras and TensorFlow
+
+Featues of python:
+simple and easy => its syntax similar to english language
+free and open source => you need not to pay a single ruppee for using python.
+platform independent language => if we are writing python code in one operating system then we can run same code in any another operating system
+Dynamic language => no need to specify the data type.
+interpreted language => line by line execution.
+It is both functional and object-oriented.
+
+.py => pyhton file => python IDLE,pycharm,spyder => web development.
+.ipynb => python notebook => jupyter notebook,google colab, ==> Machine Learning.
+
+What is Anaconda?
+Anaconda is a open source package distribution built on python and R programming.
+Most of the libraries and packages are already present in Anaconda which are widely used in data Science. where In other IDE's you need to install all those packages and libraries manually.

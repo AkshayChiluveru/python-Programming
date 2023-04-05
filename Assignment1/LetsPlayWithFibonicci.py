@@ -1,4 +1,4 @@
 a, b = 0, 1
-while b < 50:
-    print(b, end=" ")
+while a < 50:
+    print(a, end=" ")
     a, b = b, a + b
