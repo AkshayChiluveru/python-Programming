@@ -1,4 +1,8 @@
+n = int(input("Enter a Number :"))
 a, b = 0, 1
-while a < 50:
+while a < n:
     print(a, end=" ")
-    a, b = b, a + b
+    c = a + b
+    a = b
+    b = c
+
