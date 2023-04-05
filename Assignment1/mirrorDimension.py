@@ -1,3 +1,3 @@
-word = input("Enter a word: ")
+word = input("Input: ")
 reverse_word = word[::-1]
-print("Reversed word:", reverse_word)
+print("Output:", reverse_word)
