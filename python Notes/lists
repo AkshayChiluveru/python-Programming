@@ -1,0 +1,16 @@
+List => if we want to store a group of dissimial elements as a single entity then we are going to use the concept of list.
+indexing is important in case of list(Ordered collections of elements).
+Duplicates are allowed in list.
+Square brackets are used to represent the list.
+Lists are mutable or dynamic in nature we can change, add, delete the elements of a list.
+
+if we want to create an empty list:
+list_name = []
+list_name = list()
+
+if we know the list:
+list_name = [10,20,"hi",10+2j]
+
+how can we access the elements of a list:
+indexing and slicing.
+
