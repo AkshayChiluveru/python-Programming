@@ -1,0 +1,12 @@
+List is Mutable.
+Tuples are Immutable(You cannot change the content, It is fixed)
+For Set--> curly braces.
+Dictionary --> Curly braces
+{} , dict()--> Empty dictionary
+set() --> Dictionary is a common datatypes that we are going to use in our daily life.
+
+
+IDENTIFIER:
+Any name in python program is nothig but an Identifier.\
+It can be class name,function or variable name.
+Ex: student_roll=10

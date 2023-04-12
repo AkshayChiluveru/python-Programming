@@ -30,3 +30,6 @@ It is both functional and object-oriented.
 What is Anaconda?
 Anaconda is a open source package distribution built on python and R programming.
 Most of the libraries and packages are already present in Anaconda which are widely used in data Science. where In other IDE's you need to install all those packages and libraries manually.
+
+Object =>
+Any real world entity is nothing but an object --> behaviour and functionality.
