@@ -54,6 +54,20 @@
 #         count_odd += 1
 # print("Number of even numbers:", count_even)
 # print("Number of odd numbers:", count_odd)
-word = input("Enter a word: ")
-reverse_word = word[::-1]
-print("Reversed word:", reverse_word)
+# word = input("Enter a word: ")
+# reverse_word = word[::-1]
+# print("Reversed word:", reverse_word)
+# alpha_dict = {}
+# for i in range(ord('a'),ord('b')+1):
+#     alpha_dict[chr(i)] = i
+# print(alpha_dict)
+country = {}
+def addone(countries):
+    if countries in country:
+        country[countries] += 1
+    else:
+        country[countries] = 1
+addone("india")
+addone("japan")
+addone("usa")
+print(len(country))
