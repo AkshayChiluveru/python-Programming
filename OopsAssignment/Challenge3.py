@@ -16,10 +16,10 @@ class Student:
         self.__rollNumber = rollNumber
 
 student = Student()
-student.setName("John Doe")
+student.setName("Akshay")
 student.setRollNumber("12345")
-print(student.getName())        # Output: John Doe
-print(student.getRollNumber())  # Output: 12345
+print(student.getName())        
+print(student.getRollNumber()) 
 
 
 

@@ -23,7 +23,7 @@ class SavingsAccount(Account):
 
 
 
-demo1 = SavingsAccount("Ashish", 2000, 5)
+demo1 = SavingsAccount("Akshay", 2000, 5)
 demo1.deposit(500)
 print(demo1.getBalance())  
 demo1.withdrawal(500)
