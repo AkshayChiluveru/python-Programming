@@ -1,0 +1,88 @@
+Data Types:
+
+1)What are the built-in data types in Python?
+Ans-- The built-in data types in Python include integers, floats, strings, booleans, lists, tuples, sets, dictionaries, and None.
+
+2)What is the difference between mutable and immutable data types?
+Ans-- Mutable data types can be modified after creation, while immutable data types cannot be modified. Examples of mutable data types in Python include lists and dictionaries, while examples of immutable data types include integers, floats, strings, and tuples. 
+
+3)Explain the concept of type conversion and type casting in Python.
+ans-- Type conversion refers to converting one data type to another, while type casting is a specific form of type conversion that explicitly changes the data type of a value. Examples include converting an integer to a string (str(5)) or casting a float to an integer (int(3.14)).
+
+4)How do you check the data type of a variable in Python?
+Ans-- The type() function is used to check the data type of a variable in Python. For example, type(5) returns <class 'int'>.
+
+5)What is the None data type in Python, and when is it used?
+Ans-- The None data type represents the absence of a value. It is often used as a placeholder or to indicate that a variable has no value assigned.
+
+
+Operators:
+6. What are the arithmetic operators in Python? Give examples.
+Ans-- Arithmetic operators in Python include + (addition), - (subtraction), * (multiplication), / (division), % (modulo), ** (exponentiation), and // (floor division).
+
+7.Explain the difference between the '==' and 'is' operators in Python.
+Ans-- The == operator checks for equality of values, while the is operator checks for object identity (i.e., whether two objects refer to the same memory location). 
+
+8.How do you perform exponentiation in Python?
+Ans-- Exponentiation can be performed using the ** operator. For example, 2 ** 3 returns 8.
+
+9.What are the logical operators in Python? Provide examples.
+Ans--Logical operators in Python include and, or, and not. For example, True and False returns False.
+
+10.What is operator precedence and associativity in Python?
+Ans--Operator precedence determines the order in which operators are evaluated in an expression. Associativity determines the order in which operators of the same precedence are evaluated. In Python, operators follow the standard precedence and associativity rules.
+
+
+Conditional Statements:
+11. What are conditional statements in Python? Name the different types.
+Ans-- Conditional statements in Python include if, if-else, and if-elif-else statements. They allow the execution of different code blocks based on certain conditions.
+
+12.How do you write an if-else statement in Python? Provide an example.
+Ans-- An example of an if-else statement in Python:
+age = 25
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are not an adult.")
+
+
+13.What is the purpose of the 'elif' statement in Python?
+Ans-- The elif statement is used to check additional conditions after an if statement. It allows for multiple branches of conditional statements. It is short for "else if."
+
+14.How do you write nested if statements in Python?
+Ans-- Nested if statements are if statements placed within another if statement. They allow for more complex conditional logic. For example:
+x = 5
+if x > 0:
+    if x % 2 == 0:
+        print("x is a positive even number.")
+    else:
+        print("x is a positive odd number.")
+else:
+    print("x is not a positive number.")
+
+
+15.Explain the difference between the '==' and '!=' operators in conditional statements.
+Ans-- The == operator checks for equality between two values, while the != operator checks for inequality. In conditional statements, == is used to compare values, and != is used to check if two values are not equal.
+
+
+Looping Statements:
+16. What are looping statements in Python? Name the different types.
+Ans-- Looping statements in Python include for loops, while loops, and nested loops. They allow for the repeated execution of a block of code.
+
+17.How do you write a for loop in Python? Provide an example.
+Ans-- An example of a for loop in Python:
+fruits = ['apple', 'banana', 'orange']
+for fruit in fruits:
+    print(fruit)
+
+
+18.What is the purpose of the 'break' and 'continue' statements in loops?
+Ans-- The break statement is used to exit a loop prematurely. It is typically used when a certain condition is met to terminate the loop. The continue statement is used to skip the rest of the current iteration and proceed to the next iteration of the loop.
+
+19.Explain the concept of the range() function in Python loops.
+Ans-- The range() function generates a sequence of numbers that can be used in loops. It can take parameters for the start, stop, and step values. For example, range(1, 10, 2) generates the sequence [1, 3, 5, 7, 9].
+
+20.How do you write an infinite loop in Python?
+Ans-- An infinite loop can be created by using a loop condition that always evaluates to True. For example:
+while True:
+    print("This is an infinite loop.")
