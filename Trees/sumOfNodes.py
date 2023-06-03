@@ -33,7 +33,8 @@ class BinaryTree:
             return 0
         return 1 + self.count_nodes(node.left) + self.count_nodes(node.right)
 
-# Example usage:
+
+
 tree = BinaryTree()
 tree.root = tree.create_tree()
 

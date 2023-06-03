@@ -34,7 +34,8 @@ class BinaryTree:
             return 0
         return node.data + self.subtree_sum(node.left) + self.subtree_sum(node.right)
 
-# Example usage:
+
+
 tree = BinaryTree()
 tree.root = tree.create_tree()
 

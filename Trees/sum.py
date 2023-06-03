@@ -26,7 +26,8 @@ class BinaryTree:
             return node.left.data + self.sum_left_leaves(node.right)
         return self.sum_left_leaves(node.left) + self.sum_left_leaves(node.right)
 
-# Example usage:
+
+
 tree = BinaryTree()
 tree.root = tree.create_tree()
 

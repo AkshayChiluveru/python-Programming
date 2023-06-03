@@ -27,7 +27,7 @@ class BinaryTree:
         self.print_odd_level_nodes(node.left, level + 1)
         self.print_odd_level_nodes(node.right, level + 1)
 
-# Example usage:
+
 tree = BinaryTree()
 tree.root = tree.create_tree()
 

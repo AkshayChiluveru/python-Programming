@@ -40,7 +40,8 @@ class BinaryTree:
             max_sum = max(max_sum, level_sum)
         return max_sum
 
-# Example usage:
+
+
 tree = BinaryTree()
 tree.root = tree.create_tree()
 
