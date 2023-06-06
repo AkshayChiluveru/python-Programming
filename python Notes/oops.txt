@@ -93,3 +93,54 @@ that will delete useless object.
 access the properties and behaviour of a object
 
 
+Example to Demonstrate Classes , Object and Reference Variable:
+
+#demo
+class Student:
+def __init__(self,name,rollno,marks):
+self.name=name
+self.rollno=rollno
+self.marks=marks
+def Student_detail(self):
+print("Student name is :",self.name)
+print("Student rollno is :",self.rollno)
+print("Student marks is :",self.marks)
+x = Student("Akash","99","99")
+x.Student_detail()
+output:
+Student name is : Akash
+Student rollno is : 99
+Student marks is : 99
+
+Constructor in Python:
+
+Constructor --> It is special Method
+--> In python constuctor name always be __init__.
+--> Whenever an object creation will be done Python will automcatically execute the
+Constructor.
+--> If you are not giving your own constructor then PVM will automatically execute
+its own default constructor
+--> For every object constructor will executed only once.
+--> Constructor will take atleast one argument and that is self.
+
+Example to Demonstrate Constructor:
+
+class Animal:
+def __init__(x):
+print("Constuctor is executed")
+def f1(x):
+print("f1-Method Exceuted")
+x=Animal()
+y=Animal()
+z=Animal()
+output:
+
+Constuctor is executed
+Constuctor is executed
+Constuctor is executed
+
+self variable:
+
+self --> self is a variable that is used to point to the current object.
+--> if you are not using self variable then whatever first variable you are going to
+pass in your constructor that will be internally considered as a self.
