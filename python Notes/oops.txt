@@ -1,0 +1,95 @@
+Object Oriented Programming Concept:
+
+Object Oriented Programming --> It is just a programming concept in which each and every program will be implemented
+with the help of classes and objects.
+Functional programming --> It is also a programming concept in which each and every program is implemented with the help of
+Functions.
+
+Object Oriented Programming --> Java, C++, C Sharp, Python and Javascript
+
+Object --> Any real world entity is an object.
+--> Each and Every object is Having behaviour and Properties.
+Example of Behaviour and Properties of an Object:
+Student(Object) --> Behaviour --> Learning,Writing,Thinking,Reading
+--> Properties --> Name,Class,Roll,Grade,Height,Weight
+Mobile(Object) --> Behaviour --> Calling, Texting,Capture_Camera,Speaker,Bluetooth,Wifi
+--> Properties --> Color,Ram,operating System,DisplaySize,Memory
+Laptop(Object) --> Behaviour --> Webcam,Gaming,IDES,ZOOMING,VideoGraphy,Browsing,PAINT,MSWORD,MSEXCEL
+--> Properties --> COLOR,BRAND,RAM,ROM,SSD,GRAPHIC CARD,DISPLAY
+Human(Object) --> Behaviour --> Talking,Thinking,Learning,Dancing,Singing,Sleeping etc
+--> Properties --> Appearance,Name,height,Weight,BMI
+Dog(Object) --> Behaviour --> Barking,Running,Garding
+--> Properties --> Color,Breed,Legs,Hair
+
+
+OOPS VS Functional Programming:
+
+
+Object oriented programming is much secure as compare to functional programming
+because in object oriented programming we can hide our data/variables.
+In object orinted programming we are binding the variables and methods together and we can
+use them by creating the object
+
+class:
+
+Class --> Class is a blueprint/Plan of an object.
+--> Classes are basically use to represent behaviour(methods) and properties
+(variables) of an object
+Example:
+class Television:
+def __init__(self)
+self.size=10
+self.color=Blue
+self.brand=LG
+self.Model=11th Gen
+def channel(self):
+pass
+def Volume(self):
+pass
+def bluetooth(self):
+pass
+def wifi(self):
+pass
+def mobile_connect(self):
+pass
+
+
+class House:
+def __init__(self):
+self.Color=Green
+self.city=LKO
+def dinig_room(self):
+pass
+def kitchen(self):
+pass
+def hall(self):
+pass
+
+
+Object:
+
+Object --> Physical Existance of a Class
+--> Any real world entity is an object.
+We can create any number of object for a class
+
+
+Syntax of Creating a Class:
+
+Syntax of Creating a Class:
+class class_name:
+
+Syntax for creating an object:
+
+Syntax for creating an object:
+reference_variable = class_name()
+
+Reference Variable:
+
+Reference Varibles --> Is used to access the properties and behaviour of an object.Basically it is
+holding the memeory address of an object.
+--> In python if you are not giving any reference variable then python will have garbage collector
+that will delete useless object.
+--> if you are not giving reference variable then that object is useless as we cannot
+access the properties and behaviour of a object
+
+
