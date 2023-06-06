@@ -144,3 +144,58 @@ self variable:
 self --> self is a variable that is used to point to the current object.
 --> if you are not using self variable then whatever first variable you are going to
 pass in your constructor that will be internally considered as a self.
+
+Example to Demonstrate Constructor and Self Variable:
+
+#demo
+class Student:
+def __init__(self,name,rollno,marks):
+self.name=name
+self.rollno=rollno
+self.marks=marks
+print("Student name is :",self.name)
+print("Student rollno is :",self.rollno)
+print("Student marks is :",self.marks)
+x = Student("Akash","99","99")
+print("---------------------")
+print("---------------------")
+y=Student("Arnav","100","200")
+print("---------------------")
+
+output:
+Student name is : Akash
+Student rollno is : 99
+Student marks is : 99
+---------------------
+---------------------
+Student name is : Arnav
+Student rollno is : 100
+Student marks is : 200
+---------------------
+
+#demo
+class Student:
+def __init__(arnav,name,rollno,marks):
+arnav.name=name
+arnav.rollno=rollno
+arnav.marks=marks
+print("Student name is :",arnav.name)
+print("Student rollno is :",arnav.rollno)
+print("Student marks is :",arnav.marks)
+x = Student("Akash","99","99")
+print("---------------------")
+print("---------------------")
+y=Student("Arnav","100","200")
+print("---------------------")
+
+output:
+
+Student name is : Akash
+Student rollno is : 99
+Student marks is : 99
+---------------------
+---------------------
+Student name is : Arnav
+Student rollno is : 100
+Student marks is : 200
+---------------------
