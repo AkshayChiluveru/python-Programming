@@ -1,0 +1,60 @@
+
+Two important functions of file handling:
+1.tell()
+2.seek()
+
+tell() Function:
+
+--> tell function is used to return current position of the cursor or file pointer.
+Syntax:
+f.tell()
+
+seek(n) Function:
+seek(n) -->seek function is used to change/move your cursor or file pointer in forward direction.
+Syntax:
+f.seek(n)
+
+
+Ternary Operators or conditional operator:
+
+It will simply check the condition and if the condition is true
+then it will execute and return data otherwise else data will be return.
+Syntax:
+x=firsvalue if condition else second value
+if the if condtion is true then firstvalue will ve returned otherwsie second value will be returned.
+
+Bitwise Operators:
+
+1 Byte --> 8 bits
+
+Steps:
+1.Convert the given integer into Binary
+2.Perform Bitwise Operator in it.
+3.Again convert the binary number into Decimal Format
+
+& --> and
+| --> or
+^ --> xor
+>> --> left shift
+<< --> right shift
+
+Bitwise operator are only applicable for integers and Boolean:
+
+and or and Xor.
+
+Bitwise and --> &
+if both bits are 1 then only result is 1 else result is 0
+4 --> 00000100
+5 --> 00000101
+& --> 00000100 --> 4
+Bitwise or --> |
+if atleast 1 bit is 1 then answer is 1 else answer is 0
+4 --> 00000100
+5 --> 00000101
+| --> 00000101 --> 5
+Bitwise XOR --> ^
+if bits are different then result is 1 else answer is 0
+
+4 --> 00000100
+5 --> 00000101
+^ --> 00000001 --> 1
