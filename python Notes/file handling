@@ -39,3 +39,37 @@ Closing a file:
 Closing the file: After Completing the Operations its our duty to close the file.
 Syntax for Closing a File:
 f.close()
+
+
+Write Mode(Operation):
+For writing the data in text files we are having two function:
+1.write(str) --> It will take data in form of Strings.
+2.writelines(list of lines) --> It will take data in form of Lists.
+Note --> if the file is not exist then w and a mode will create a new file with the same Name.
+--> If the file is already exist then w mode will replace the old content with the new content
+in existing file.
+
+   
+Read Mode(Read Operation):
+for reading the data from the text file we are having following functions:
+read() -->read whole data from file
+read(n) --> read n character from a file
+readline() --> read a single line(first_line)
+readlines() --> read all data from a file into a list
+Note --> If the file is not present(Exist) then you will get file not found error in read Mode.
+
+
+Append Mode:
+For Appending the data in text files we are having two function:
+1.write(str) --> It will take data in form of Strings.
+2.writelines(list of lines) --> It will take data in form of Lists.
+Note --> if the file is not exist then w and a mode will create a new file with the same Name.
+--> If the file is already exist then a mode will add the new content at the last.
+
+
+With Keyword:
+If you dont want to close your file again and again for that we are having with statement
+With --> automatically close your close
+for checking weather a given file is closed of not we have f.close() function.
+f.closed() --> will return True if file is closed else True if file is opened
+
