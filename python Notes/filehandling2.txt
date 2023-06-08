@@ -58,3 +58,29 @@ if bits are different then result is 1 else answer is 0
 4 --> 00000100
 5 --> 00000101
 ^ --> 00000001 --> 1
+
+
+left shift(<<):
+print(10<<2)
+10 --> 00001010
+00101000
+Steps:
+1.First convert the given number into 8-bit binary number
+2.In left shift remove left side bits based on the shifting value
+3.After removing the bits from left side add 00 bits at right side
+4.Convert binary bits into Decimal
+
+Right shift (>>):
+
+10>>2
+10 --> 00001010
+00000010
+
+15>>3
+15 --> 00001111
+00000001
+Steps:
+1.First convert the given number into 8-bit binary number
+2.In right shift remove right side bits based on the shifting value
+3.After removing the bits from ride side add 00 bits at left side
+4.Convert binary bits into Decimal
