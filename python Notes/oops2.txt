@@ -10,3 +10,54 @@ Types of Attributes/variables:
 1.Instance Varibles --> Object Level Variables
 2.Static Variables --> Class Level Variable
 3.Local Variables
+
+Instance Variable:
+
+Instance Variable --> if the value of the variable is varied from object to objectsuch type of variables are known as
+instance variable .
+--> for every object a seperate copy of variable is created
+--> For declaring the instance variable you need to use self
+--> If you want to access any instance variable inside the class then you need to use self variable
+--> If you want to access any instance variable outside the class then you need to use object reference
+
+Example of Instance Variable:
+
+class Student:
+def __init__(self,name,classes,rollno):
+self.name=name #"Pratyush" #Pavan
+self.classes=classes #12 #99
+self.rollno=rollno #99 #100
+print("Student name is :",self.name)
+print("Student rollno is :",self.rollno)
+print("Student marks is :",self.classes)
+def talk(self):
+print("Student name is :",self.name)
+print("Student rollno is :",self.rollno)
+print("Student marks is :",self.classes)
+x=Student("Pratyush",12,99)
+print(x.name)
+print("-------------")
+y=Student("Pavan",99,100)
+print(y.name)
+
+output:
+Student name is : Pratyush
+Student rollno is : 99
+Student marks is : 12
+Pratyush
+-------------
+Student name is : Pavan
+Student rollno is : 100
+Student marks is : 99
+Pavan
+
+
+Static Variable:
+static variable --> if the value of the variable is not varying with object to object then such type of variables are known
+as static variable
+--> a single copy is created for whole class
+--> Static variable are declared inside the class outside the constructor
+--> If you want to access static variable inside the class then you can use either self or classname
+--> if you want to access static variable outside the class then you can use eithter object reference
+or classname. but it is recoommnded to use class name
+--> Static variable are the only variable that we can access without creating the object
