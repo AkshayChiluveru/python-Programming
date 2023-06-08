@@ -61,3 +61,83 @@ as static variable
 --> if you want to access static variable outside the class then you can use eithter object reference
 or classname. but it is recoommnded to use class name
 --> Static variable are the only variable that we can access without creating the object
+
+Example of Static variable:
+
+class Student:
+college_name="Edyoda Digital University"
+def __init__(self,name,classes,rollno):
+self.name=name
+self.classes=classes
+self.rollno=rollno
+print("Student name is :",self.name)
+print("Student rollno is :",self.rollno)
+print("Student marks is :",self.classes)
+def talk(self):
+print("Student name is :",self.name)
+print("Student rollno is :",self.rollno)
+print("Student marks is :",self.classes)
+print("Student College Name is ,",self.college_name)
+print("Student College Name is ",Student.college_name) #recommended
+x=Student("Pratyush",12,99)
+Student.college_name
+print(x.college_name)
+
+output:
+Student name is : Pratyush
+Student rollno is : 99
+Student marks is : 12
+Edyoda Digital University
+
+Local Variables:
+
+local variables --> these variable are used to declare inside the method for the temperory requirement.
+--> Local variable are created at the time of function exectuion and once
+function execution is done it is destroyed
+--> Local variable cannot be accessed outside the function.
+
+Example of Local Variables:
+
+class test:
+def m1(self):
+a=100
+print(a)
+def m2(self):
+b=200
+print(b)
+t=test()
+t.m1()
+t.m2()
+output:
+100
+200
+
+
+
+
+Types of Methods:
+
+1.Instance method
+2.Static method
+3.Class method
+
+Instance Method:
+
+Instance Methods(Object Level Method) --> if you are using instance variable inside any method then
+overall method will be an instance method.
+--> The first argument of the instance method will be always be self.
+--> Instance method are generally used to access instance variable.
+--> You can call instance method with the help of object reference outside the class
+--> if You want to call instance method within the class then you need to use self
+variable
+
+Class Method:
+
+Class Method --> if you are using static variable(class level) inside any method then overall
+method will be a class method
+--> If you want a define a class method then you need to use @classmethod decorator
+--> if you are defining class method then you need to pass atleast one argument(cls) that is mandatory
+--> you can directly access class method without creating an object
+--> If you want to access the static variable inside the class method then you need to use cls variable
+--> If you want to access the static variable inside the instance method then you need to use class name
+--> You can call Class Method without Creating an Object.
