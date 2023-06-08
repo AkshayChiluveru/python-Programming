@@ -1,0 +1,41 @@
+What is file handling?
+
+File handling --> It is just a concept by which we can manage and perform diffeerent
+operations on file.
+Operations on File --> Read,write,append
+
+File Handling is used for storing the data.
+If you want to store minimum or less amount of data then files are good.
+if the data is in millions trillons then database is suitable.
+
+Files --> .txt ,.csv
+
+Note:
+Database is already there why we are using file handling?
+Suppose that we are having data have 50 students now tell me which storing mechanism is good>
+Database --> Amount/sql queries/ consistency/normalization/atomicity 1 lakh --> trillons
+Files ---> Minimum data
+
+Types of Files:
+1.Text Files --> Data is in the form of Text(.txt)
+2.Binary files --> Data is in the form of videos, audio,images etc
+
+Opening a file:
+Before doing any operation on file the first step is to open the file.
+Syntax for opening a File:
+f=open("file_name","mode")  
+
+
+Types of Modes:
+Types of Modes in Python-->
+1. r --> open existing file for read operation.
+2. w --> open the file for write operation
+3. a --> open the file for append operation.
+4. r+ --> To read and write on the file
+5. w+ --> To write and read the file
+
+
+Closing a file:
+Closing the file: After Completing the Operations its our duty to close the file.
+Syntax for Closing a File:
+f.close()
