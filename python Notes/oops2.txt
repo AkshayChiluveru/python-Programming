@@ -1,0 +1,12 @@
+Note:
+
+In object oriented Programming :
+Properties --> variables/Attributes
+Behaviour --> Functions/Methods
+
+Types of Attributes/variables:
+
+Types of Attributes/variables:
+1.Instance Varibles --> Object Level Variables
+2.Static Variables --> Class Level Variable
+3.Local Variables
