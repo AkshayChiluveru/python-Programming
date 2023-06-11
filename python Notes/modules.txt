@@ -1,0 +1,24 @@
+What are Modules?
+
+--> Collections of classes , variables and functions is called a modules.
+--> Each and Every file in Python is a Module.
+--> Each and Every file that is having .py extension is a module.
+
+What are Packages?
+
+Collections of modules is known as a Package.(Folder that is having n number of Module).
+
+Types of Modules?
+
+Two Types of Modules:
+Builtin Modules -->That modules which we can directly use by importing it. There is no need
+to define that module.Internally Pvm knows the variables/functions/classes that are present in
+that module.
+Example:
+math module
+random module
+User Defined Modules --> that modules which are prepared by the developer as per the
+business requirement.
+Example:
+addf
+subt
