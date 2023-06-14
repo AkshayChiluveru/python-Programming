@@ -116,3 +116,12 @@ Dictionary is also a collection of Element That will store elements in the form 
 --> Dictionary keys are unique They must not be duplicate(If you use duplicate keys then only last one
 will be considered)
 --> Dictionary are also mutable.(You can change the content of Dictionary as well)
+
+
+Summary:
+Lists are mutable --> we cam change the content of the list
+Tuples are immutable --> we cannot change the content of the tuple
+Set are mutable and Duplicates not allowed --> we can change the content of the set but duplicates
+are not allowed
+Dictionary are mutable --> we can change the keys and values in dictionary. Duplicate keys are not
+allowed but values may be duplicate
