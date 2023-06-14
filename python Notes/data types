@@ -1,0 +1,18 @@
+Data types:
+
+Data + Types -->Represents the type of Data that we are using in our program.That we are using
+inside a variable
+Note--> In python we need not to define the data expliclity Internally PVM will automatically determine
+the datatype and based on that datatype memeory will be allocated at the runtime
+
+
+Important Functions:
+type()--> that is used to give the type of data that we are using inside our program
+
+Types of Data Types:
+Types of Datatype in Python?
+1.Numeric Datatype: Int, Float , Complex
+2.Sequence Datatype : List, String , tuples
+3.Boolean Datatype: True and False
+4.Dictionary
+5.Set
