@@ -56,3 +56,63 @@ be considered as a string in python.
 in python then that is also be considered as a string.
 In Java we can represent char datatype with the help of single quotes('')
 In Java we can represent String with the help of double quotes(" ")
+
+
+Standard Data Type:
+
+Standard Datatype that are common to every programming Language --> Integer,Float, String, Boolean
+
+
+TypeCasting -- Conversion of One Datatype to Another:
+
+For Converting Any Datatype to int we have --> int()
+For Converting Any Datatype to float we have --> float()
+For Converting Any Datatype to complex we have --> complex()
+For Converting Any Datatype to string we have --> str()
+For Converting Any Datatype to Boolean we have --> bool()
+
+
+example:
+Conversion of String Datatype to integer datatype -- Possible/Not Possible
+Note: If we are converting string datatype to integer datatype then it is mandatory that within the
+quotes the literal/data is in the form of Integer only.
+x="10.5"
+y=int(x)
+print(y) #Error
+x="abc"
+y=int(x)
+print(y) #Error
+
+
+List DataType:
+
+-->List is a collection of Dissimilar Elements.
+-->If we want to Store multiple Elements as a single entity then we can use List .
+-->Square Brackets are used to represent List Datatype.
+-->List Datatype is mutable.(Means we can change the Content/Element of the List).
+
+Tuple DataType:
+
+-->Tuple is a collection of Dissimilar Elements.
+-->If we want to Store multiple Elements as a single entity
+then we can use Tuple .
+-->Parenthesis Brackets are used to represent Tuple Datatype.
+-->Tuple Datatype is immutable.(Means we cannot change the Content/Element of the Tuple).
+-->It is read only mode of List.
+
+
+Set DataType:
+
+--> Set is also a collection of Element.
+--> In Sets Duplicate values are not allowed.
+--> Curly Braces are used to represent Sets.
+--> Set are mutable(Means we can change the content/element of Set)
+
+
+Dictionary DataType:
+
+Dictionary is also a collection of Element That will store elements in the form of Keys and Value
+--> Curly Braces are Used to Represent Dictionary.
+--> Dictionary keys are unique They must not be duplicate(If you use duplicate keys then only last one
+will be considered)
+--> Dictionary are also mutable.(You can change the content of Dictionary as well)
