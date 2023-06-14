@@ -16,3 +16,43 @@ Types of Datatype in Python?
 3.Boolean Datatype: True and False
 4.Dictionary
 5.Set
+
+
+
+Numeric Datatype:
+Integer Datatype --> Represents the integral values
+Positive Intgerals --> 0,1,2,3,5,......................
+Negative Integrals --> -1,-2,-3.-4,-5,-6,-7,-7
+Note : If we want to represent any data without decimal point then we will use integer datatype.
+In python there is no any limit for declaring the integar datatype
+
+
+Float Datatype --> represents that floating point values(decimal format)
+--> float positive numbers--> 0.0,0.1.....;.
+--> float negative numbers -->-1.0,0.2......
+
+
+Complex Data Type:
+#Complex Number
+A number which is in the form of:
+a+bj
+a-> real part(real number)
+b--> imaginary(imaginary number)
+j^2-->-1
+j --> (-1)*1/2
+
+Boolean Data Type:
+Boolean simple means either true or false.
+Internally True is equal to 1
+False is equal to 0
+
+String Data Type:
+
+Strings --> String is the sequence or a collection of characters within single quotes or double quote.
+Note:1. If you are representing anything within a single quotes(' ')/Double quotes(" ")
+than that is always
+be considered as a string in python.
+2. In python we don't have char datatype if we want to represent a single character
+in python then that is also be considered as a string.
+In Java we can represent char datatype with the help of single quotes('')
+In Java we can represent String with the help of double quotes(" ")
