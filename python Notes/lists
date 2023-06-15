@@ -14,3 +14,37 @@ list_name = [10,20,"hi",10+2j]
 how can we access the elements of a list:
 indexing and slicing.
 
+
+Builtin Functions in List:
+
+len() Function:
+
+len function ---> len function is used to return the length of a given sequence.(list,set,dictionary,
+tuple,string)
+
+
+Count() Function:
+
+count function --> Count function is basically used to return the number of occurances of an element.
+Syntax:
+list_name.count(element)
+Note --> if the element is not present in the list then count function will give you 0.
+
+Index Function:
+index function --> Index function is used to get the index value of the first occurance of an element
+if element is not present then index function will give you an error.
+Syntax:
+list_name.index(element_value)
+
+Insertion Functions of List:
+
+In Python if you want to insert any element in the list then we have 3 Types of insertion function:
+1.append function
+2.Insert Function
+3.extend function
+
+Append Function:
+append () Function --> append function will add any element at the end of the list.
+Syntax:
+list_name.append(value/data)
+Note: Append function will add a single element at a time.
