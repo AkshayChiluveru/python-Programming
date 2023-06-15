@@ -48,3 +48,27 @@ append () Function --> append function will add any element at the end of the li
 Syntax:
 list_name.append(value/data)
 Note: Append function will add a single element at a time.
+
+
+Insert Function:
+insert () Function --> insert function is to add a given element on the given index
+Syntax:
+list_name.insert(index_value ,value/data)
+Note: Insert function will take two arguments( indedx_value,data)
+Note --> If the index value is not present in the given list then index function first check weather
+the index value is positive or negative. If the index value is positive then index function
+will add the element at last position of the list. and If the index value is negative then
+given element will add at the first position.
+
+
+Extend Function:
+Extend function --> Extend function is used to add a given sequence into a list.
+Syntax:
+first_list.extend(second_sequence)
+
+Append vs Extend Vs Insert:
+
+Append --> Will take a single element at a time and it will add that element at the last
+Extend --> Will take a sequence and add all the elements of the given sequence in the first list.
+Insert --> add element at the given index
+Join --> convert a list into string.
