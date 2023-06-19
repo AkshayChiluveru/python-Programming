@@ -1,0 +1,4 @@
+What is the capital of France?:Paris
+Who painted the Mona Lisa?:Leonardo da Vinci
+What is the square root of 64?:8
+What is the chemical symbol for gold?:Au
