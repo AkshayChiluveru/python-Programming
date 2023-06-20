@@ -95,3 +95,77 @@ Q7. Finally, tell us about bitwise operators in Python.
 
     >>> 4>>2
     1
+Q8. Explain Python List Comprehension.
+
+    The list comprehension in python is a way to declare a list in one line of code. Let’s take a look at one such example.
+
+    >>> [i for i in range(1,11,2)]
+    [1, 3, 5, 7, 9]
+
+    >>> [i*2 for i in range(1,11,2)]
+    [2, 6, 10, 14, 18]
+Q9. Write code to print only upto the letter t.
+
+    >>> i=0
+    >>> while s[i]!='t':
+    print(s[i],end=’’)
+    i+=1
+    I love Py
+Q10. What is a control flow statement?
+
+    A Python program usually starts to execute from the first line. From there, it moves through each statement just once and as soon as it’s done with the last statement, it transactions the program. However, sometimes, we may want to take a more twisted path through the code. Control flow statements let us disturb the normal execution flow of a program and bend it to our will.
+Q11. How will you create the following pattern using Python?
+
+*
+**
+***
+****
+*****
+    We will use two for-loops for this.
+
+    >>> for i in range(1,6):
+        for j in range(1,i+1):
+                    print('*',end='')
+        print()
+Q12. Where will you use while rather than for?
+
+    Although we can do with for all that we can do with while, there are some places where a while loop will make things easier-
+
+    For simple repetitive looping
+    When we don’t need to iterate through a list of items- like database records and characters in a string.
+Q13. Explain lambda expressions. When would you use one?
+
+    When we want a function with a single expression, we can define it anonymously. A lambda expression may take input and returns a value. To define the above function as a lambda expression, we type the following code in the interpreter:
+
+    >>> (lambda a,b:a if a>b else b)(3,3.5)
+    3.5
+
+    Here, a and b are the inputs. a if a>b else b is the expression to return. The arguments are 3 and 3.5.
+
+    It is possible to not have any inputs here.
+
+    >>> (lambda :print("Hi"))()
+    Hi
+Q14. When to use yield instead of return in Python?
+
+    Return sends a specified value back to its caller whereas Yield can produce a sequence of values. We should use yield when we want to iterate over a sequence, but don’t want to store the entire sequence in memory. Yield is used in Python generators
+Q15. Explain Argument passing in python.
+
+    in Python every variable name is a reference. When we pass a variable to a function, a new reference to the object is created. Parameter passing in Python is the same as reference passing in Java.
+
+    1. Default argument
+            A default argument is a parameter that assumes a default value if a value is not provided in the function call for that argument. 
+    2. Keyword arguments (named arguments)
+            The idea is to allow the caller to specify the argument name with values so that the caller does not need to remember the order of parameters.
+    3. Positional arguments
+            Position-only arguments mean whenever we pass the arguments in the order we have defined function parameters in which if you change the argument position then you may get the unexpected output
+    4. Arbitrary arguments (variable-length arguments *args and **kwargs)
+            In Python Arbitrary Keyword Arguments, *args, and **kwargs can pass a variable number of arguments to a function using special symbols.
+Q16. How can I make a tuple out of a list?
+
+month = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec']  
+converting_list = tuple(month)  
+print(converting_list)  
+print(type(converting_list))  
+('jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec')
+<class 'tuple'>
