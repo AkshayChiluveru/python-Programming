@@ -169,3 +169,52 @@ print(converting_list)
 print(type(converting_list))  
 ('jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec')
 <class 'tuple'>
+Q17. In a function, how do you create a global variable?
+
+# We can create a global variable by designating it as global 
+# within every function that assigns to it; we can utilize it in other functions.
+
+global_var = 0  
+def modify_global_var():  
+    global global_var # Setting global_var as a global variable  
+    global_var = 10  
+def printing_global_var():  
+    print(global_var) # There is no need to declare global variable  
+modify_global_var()  
+printing_global_var() # Prints 10  
+10
+Q18. Is it possible to build a Python program that reverses a number?
+
+num = int(input("Enter number: "))  
+reverse = 0  
+n=num
+while(n>0):  
+    digit = n%10  
+    reverse = reverse*10+digit  
+    n=n//10  
+print(f"The reverse of the number {num} is:",reverse)  
+The reverse of the number 125 is: 521
+Q19. How is a Python Dictionary different from List comprehensions?
+
+# This is example of list comprehension
+
+list_comp = [i for i in range(4)]  
+print(list_comp)  
+
+# This is example of dict comprehension
+
+dictt = {i : i+2 for i in range(10)}  
+print(dictt)  
+[0, 1, 2, 3]
+{0: 2, 1: 3, 2: 4, 3: 5, 4: 6, 5: 7, 6: 8, 7: 9, 8: 10, 9: 11}
+Q20. What is a lambda function, and how does it work?
+
+# A lambda function is a type of nameless function. 
+# This method can take as many parameters as you want but a single statement.
+
+# Python program to show how to use lambda functions  
+# Creating a lambda function for addition  
+
+sum_ = lambda x, y, z : x + y + z  
+print("Sum using lambda function is: ", sum_(4, 6, 8))  
+Sum using lambda function is:  18
