@@ -1,0 +1,97 @@
+
+Q1. What are the key features of Python?
+
+If it makes for an introductory language to programming, Python must mean something. 
+These are its qualities:
+
+    Interpreted
+    Dynamically-typed
+    Object-oriented
+    Concise and simple
+    Free
+    Has a large community
+Q2. How do you get a list of all the keys in a dictionary?
+
+    Be specific in these type of Python Interview Questions and Answers.
+
+    For this, we use the function keys().
+
+    >>> mydict={'a':1,'b':2,'c':3,'e':5}
+    >>> mydict.keys()
+    dict_keys([‘a’, ‘b’, ‘c’, ‘e’])
+Q3. What is slicing?
+
+    Slicing is a technique that allows us to retrieve only a part of a list, tuple, or string. For this, we use the slicing operator [].
+
+    >>> (1,2,3,4,5)[2:4]
+    (3, 4)
+
+    >>> [7,6,8,5,9][2:]
+    [8, 5, 9]
+
+    >>> 'Hello'[:-1]
+    ‘Hell’
+Q4. How will you convert a list into a string?
+
+    We will use the join() method for this.
+
+    >>> nums=['one','two','three','four','five','six','seven']
+    >>> s=' '.join(nums)
+    >>> s
+    ‘one two three four five six seven’
+Q5. Explain logical operators in Python.
+
+    We have three logical operators- and, or, not.
+
+    >>> False and True
+    False
+
+    >>> 7<7 or True
+    True
+
+    >>> not 2==2
+    False
+Q6. What are membership operators?
+
+    With the operators ‘in’ and ‘not in’, we can confirm if a value is a member in another.
+
+    >>> 'me' in 'disappointment'
+    True
+
+    >>> 'us' not in 'disappointment'
+    True
+Q7. Finally, tell us about bitwise operators in Python.
+
+    These operate on values bit by bit.
+
+    AND (&) This performs & on each bit pair.
+
+    >>> 0b110 & 0b010
+    2
+
+    OR (|) This performs | on each bit pair.
+
+    >>> 3|2
+    3
+
+    XOR (^) This performs an exclusive-OR operation on each bit pair.
+
+    >>> 3^2
+    1
+
+    Binary One’s Complement (~) This returns the one’s complement of a value.
+
+    >>> ~2
+    -3
+
+    Binary Left-Shift (<<) This shifts the bits to the left by the specified amount.
+
+    >>> 1<<2
+    4
+
+    Here, 001 was shifted to the left by two places to get 100, which is binary for 4.
+
+    Binary Right-Shift (>>)
+
+    >>> 4>>2
+    1
