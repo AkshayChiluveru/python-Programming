@@ -4,6 +4,8 @@ What are Modules?
 --> Each and Every file in Python is a Module.
 --> Each and Every file that is having .py extension is a module.
 
+ex: It is like a code library which can be used to borrow the code written by somebody else in our python program.
+
 What are Packages?
 
 Collections of modules is known as a Package.(Folder that is having n number of Module).

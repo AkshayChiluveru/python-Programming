@@ -1,3 +1,12 @@
+what is a variable?
+variable is like a container that holds data. Very similar to how our containers in kitchen holds sugar, salt etc Creating a variable is like creating a placeholder in memory and assigning it some value. In python its as easy as writing.
+
+a=2
+b = true
+c = "Akshay"
+d = None
+
+
 List is Mutable.
 Tuples are Immutable(You cannot change the content, It is fixed)
 For Set--> curly braces.
