@@ -1,0 +1,21 @@
+Type casting in python:
+The converison of one data type into another data type is known as type casting in python or type conversion in python.
+
+Python supports a wide variety of functions or methods like:
+int(), float(), str(), ord(), set(), list(), tuple() etc. for the type casting in python.
+
+Two types of type casting:
+
+1. Explicit Conversion( Explicit type casting in python) 
+2. Implicit Conversion( Implicit type casting in python)
+
+Explicit Type Casting: 
+The conversion of one data type into another data type, done via developer or programmer's intervention or manually as per the requirement, is known as explicit type conversion.
+
+It can be achieved with the help of python's built-in type conversion functions such as int(), float(), str(), ord(), set(), list() etc.
+
+ex:
+a = "25"
+b = 5
+c = int(a) + b
+print(c)
