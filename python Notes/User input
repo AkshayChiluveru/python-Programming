@@ -1,0 +1,16 @@
+In python, we can take user input directly by using input() function.This input function gives a return value as string/charancter hence we have to pass that innto a variable.
+
+syntax:
+
+variable = input()
+
+But input function return the value as string. Hence we have to type cast then whenever required to another datatype.
+
+ex:
+
+variable = int(input())
+variable = float(input())
+
+ex: 
+a = input("enter the name: ")
+print(a)
