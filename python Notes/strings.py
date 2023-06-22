@@ -59,3 +59,55 @@ print(fruit1[3:-4])
 print(fruit1[-6:])
 print(fruit1[-2:-7])
 print(fruit1[-7:-2])
+
+
+nm = "Harry"
+print(nm[-4:-2])
+
+#  String Methods:
+# Python provides a set of built-in methods that we can use to alter and modify the strings.
+# Strings are immutable
+
+# UPPER=> upper():
+# The upper( ) method converts a string to upper case
+# ex:
+
+str = "   AKshay"
+print(len(str))
+print(str.upper())
+
+# LOWER=> lower():
+# The lower( ) method converts a string to lower case
+# ex:
+print(str.lower())
+
+# Strip(): the strip() method removes any white spaces before and after the string
+print(str.strip())
+
+
+# rstrip(): the rstrip() method removes any trailing characters.
+
+str1 = "Akshay@@@@"
+print(str1.rstrip("@"))
+
+# replace(): the replace() method replaces all occurences of a c=string with another string.
+
+str2 = "Akshay"
+print(str.replace("Akshay", "Chiluveru"))
+print(str.replace("hay", "Chiluveru"))
+print(str.replace("ha", "Chiluveru"))
+
+
+# split(): the split method splits the given string at the specified instance and returns the seperated strings as list items.
+
+str3 = "Akshay has phone"
+print(str3.split(" "))
+
+# capitalize():
+# The capitalize() method turns only the first character of the string to uppercase and the rest other characters of the string are turned to lowercase. The string has no effect if the first character is already uppercase.
+
+str4 = "akshay"
+str5 = "hello World"
+print(str4.capitalize())
+print(str5.capitalize())
+print(str5.center(50))
