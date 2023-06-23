@@ -58,3 +58,48 @@ for k in range(5):
   
 # for k in range(1, 12, 3):
 #   print(k)
+
+# Iterative Statement --> when we want to execute a group of statement multiple times then we will
+# use iterative statements.
+# In python we are having two types of iterative statement:
+# 1.for loop
+# 2.while loop
+# Requirement of Iterative Statement:
+# Suppose i want to write a code that will print hello world 10000 Times. For that we have two
+# approaches:
+# 1.We can manually write Hello World 10000 Times.
+# 2.We can simply use iterative statement and then print hello world 10000 times.
+# Note: First approach is not feasible because we need to write hello world 10000 times which decreases
+# the code readability and also increases the code length.
+# To fullfill such requierement in more easier manner we need to Iterative Statement(loops).
+
+
+for i in range(10):
+    print("Hello World")
+
+# Note: With the help for loop we can easily print hello world 10 Times by writing 2 lines of
+# statements. and It is more feasible as it increases the readibility of the code
+
+
+# For Loops:
+
+# --> if we want to execute a number of statement in some sequence then we should always use for loop.
+# Syntax of For loop:
+# for i in sequence:
+# body/Statement
+# i is known as iterator
+
+
+# Python Program to print each and every Character of the Given String
+
+x="Edyoda Digital University"
+for i in x:
+    print(i)
+
+
+
+# Python Program to print each and every Element of the Given List
+
+x=[10,20,30,40,50]
+for i in x:
+    print(i)
