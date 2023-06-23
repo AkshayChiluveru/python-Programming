@@ -103,3 +103,13 @@ for i in x:
 x=[10,20,30,40,50]
 for i in x:
     print(i)
+
+
+#Extract all digits of a number
+x="198"
+for i in x:
+    y=int(i)%10
+    print(y)
+
+
+# Python Program to find the Factorial of a Number
