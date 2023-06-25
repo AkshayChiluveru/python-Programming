@@ -36,6 +36,8 @@
 
 
 
+#  practicing patters
+
 # square
 
 # n = 5
