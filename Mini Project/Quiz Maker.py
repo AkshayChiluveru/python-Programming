@@ -22,13 +22,10 @@ def grade_quiz(quiz, answer_key):
             score += 1
     return score, total_questions
 
-# Read the questions from the file
 questions = read_questions("questions.txt")
 
-# Generate a random quiz with 5 questions
 quiz = generate_quiz(questions, 5)
 
-# Define the answer key (question:answer)
 answer_key = {
     "Question 1": "Answer 1",
     "Question 2": "Answer 2",
@@ -37,9 +34,7 @@ answer_key = {
     "Question 5": "Answer 5"
 }
 
-# Grade the quiz
 score, total_questions = grade_quiz(quiz, answer_key)
 
-# Print the results
 print(f"Score: {score}/{total_questions}")
 
