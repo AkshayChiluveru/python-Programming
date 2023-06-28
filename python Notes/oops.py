@@ -56,25 +56,45 @@
 
 
 
-class mobile:
-    def __init__(self,brand,color,ram,rom):
-        self.w = brand
-        self.x = color
-        self.y = ram
-        self.z = rom
+# class mobile:
+#     def __init__(self,brand,color,ram,rom):
+#         self.w = brand
+#         self.x = color
+#         self.y = ram
+#         self.z = rom
 
-    def view_mobile(self):
-        print("mobile brand is: ", self.w)
-        print("mobile color is: ", self.x)
-        print("mobile ram is: ", self.y)
-        print("mobile rom is: ", self.z)
+#     def view_mobile(self):
+#         print("mobile brand is: ", self.w)
+#         print("mobile color is: ", self.x)
+#         print("mobile ram is: ", self.y)
+#         print("mobile rom is: ", self.z)
 
 
-x = mobile("onePlus","Olive Green",12,256)
-x.view_mobile()
-print("----------------------------------")
-y = mobile("iphone","Green","12 GB","256 GB")
-y.view_mobile()
-print("----------------------------------")
-z = mobile("Vivo","Black","8 GB","128 GB")
-z.view_mobile()
+# x = mobile("onePlus","Olive Green",12,256)
+# x.view_mobile()
+# print("----------------------------------")
+# y = mobile("iphone","Green","12 GB","256 GB")
+# y.view_mobile()
+# print("----------------------------------")
+# z = mobile("Vivo","Black","8 GB","128 GB")
+# z.view_mobile()
+
+
+
+class Animal: 
+ def __init__(self,name,rollno):
+   self.name = name
+   self.rollno = rollno
+   print("Constuctor is executed")
+   
+ def f1(self):
+   
+   print(self.name,self.rollno)
+   print("f1-Method Exceuted")
+
+x=Animal("akshay","12")
+x.f1()
+y=Animal("akshay","12")
+y.f1()
+z=Animal("akshay","12")
+z.f1()
