@@ -83,4 +83,26 @@ x1.sort()
 print(x1)
 
 
+# finding maximum number in an array
 
+number = [3,2,6,4,5,8,10]
+
+max_num = number[0]
+for num in number:
+    if num > max_num:
+        max_num = num
+    
+print(max_num)
+
+
+
+# Array  of numbers 
+# print sum of numbers in an array
+
+number = [1,2,3,4,5,6,7,8]
+
+sum =0
+for num in number:
+    sum += num
+
+print(sum)

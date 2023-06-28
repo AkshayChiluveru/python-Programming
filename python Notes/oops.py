@@ -81,20 +81,22 @@
 
 
 
-class Animal: 
- def __init__(self,name,rollno):
-   self.name = name
-   self.rollno = rollno
-   print("Constuctor is executed")
+# class Animal: 
+#  def __init__(self,name,rollno):
+#    self.name = name
+#    self.rollno = rollno
+#    print("Constuctor is executed")
    
- def f1(self):
+#  def f1(self):
    
-   print(self.name,self.rollno)
-   print("f1-Method Exceuted")
+#    print(self.name,self.rollno)
+#    print("f1-Method Exceuted")
 
-x=Animal("akshay","12")
-x.f1()
-y=Animal("akshay","12")
-y.f1()
-z=Animal("akshay","12")
-z.f1()
+# x=Animal("akshay","12")
+# x.f1()
+# y=Animal("akshay","12")
+# y.f1()
+# z=Animal("akshay","12")
+# z.f1()
+
+

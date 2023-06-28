@@ -13,33 +13,34 @@
 # conditional operators:
 #  > ,< , >=,<=, ==, !=
 
-a = int(input("Enter your age: ")) 
-print("Your age is: ",a)
-if a > 18:
-    print("You are eligible to drive")
-else:
-    print("You are not eligible to drive")
+# a = int(input("Enter your age: ")) 
+# print("Your age is: ",a)
+# if a > 18:
+#     print("You are eligible to drive")
+# else:
+#     print("You are not eligible to drive")
 
 
 
-num1 = 100
-num2 = 200
-if num1 > num2:
-	print("num1 is greater than num2")
-elif num2 > num1:
-	print("num2 is greater than num1")
-else:
-	print("both are equal")
+# num1 = 100
+# num2 = 200
+# if num1 > num2:
+# 	print("num1 is greater than num2")
+# elif num2 > num1:
+# 	print("num2 is greater than num1")
+# else:
+# 	print("both are equal")
 
 
 
-n = int(input("Number: "))
-if n%2 != 0:
-    print("Weird")
-elif n%2 == 0 and 2<=n<=5:
-    print("Not Weird")
-elif n%2 == 0 and 6<= n <= 20:
-    print("Weird")
-elif n%2 == 0 and n>20:
-    print("Not Weird")
+# n = int(input("Number: "))
+# if n%2 != 0:
+#     print("Weird")
+# elif n%2 == 0 and 2<=n<=5:
+#     print("Not Weird")
+# elif n%2 == 0 and 6<= n <= 20:
+#     print("Weird")
+# elif n%2 == 0 and n>20:
+#     print("Not Weird")
     
+
