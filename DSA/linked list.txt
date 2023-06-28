@@ -1,0 +1,191 @@
+
+1. Implementation of linked list.
+
+2. Basic Operations on linked list: Traversing, Searching, Sorting, Hashing, Insertion, Deletion and Merging
+
+3. Applications of linked list
+
+
+
+
+1. Implementation:
+   Implementation refers to the process of translating a data structure or algorithm into actual code using a programming language. It involves defining the structure and behavior of the data structure or algorithm. Let's consider an example of implementing a stack using an array in Python:
+
+   ```python
+   class Stack:
+       def __init__(self):
+           self.items = []
+
+       def push(self, item):
+           self.items.append(item)
+
+       def pop(self):
+           if not self.is_empty():
+               return self.items.pop()
+           else:
+               return None
+
+       def is_empty(self):
+           return len(self.items) == 0
+
+       def size(self):
+           return len(self.items)
+
+   # Usage of the implemented stack:
+   stack = Stack()
+   stack.push(10)
+   stack.push(20)
+   stack.push(30)
+   print(stack.pop())  # Output: 30
+   print(stack.size())  # Output: 2
+   ```
+
+   In the above example, we define a `Stack` class that internally uses an array (`self.items`) to store the elements. The methods of the class (`push`, `pop`, `is_empty`, `size`) provide the required functionality to manipulate the stack.
+
+2. Basic Operations:
+
+   a. Traversing: Traversing a data structure means visiting each element in the structure. For example, let's traverse an array in Python and print its elements:
+
+   ```python
+   array = [10, 20, 30, 40, 50]
+   for element in array:
+       print(element)
+   ```
+
+   The above code traverses the array and prints each element on a separate line.
+
+   b. Searching: Searching involves finding a specific element in a data structure. For instance, let's search for a target value in an array using linear search in Python:
+
+   ```python
+   def linear_search(array, target):
+       for i in range(len(array)):
+           if array[i] == target:
+               return i
+       return -1
+
+   array = [10, 20, 30, 40, 50]
+   target = 30
+   print(linear_search(array, target))  # Output: 2
+   ```
+
+   The linear search algorithm iterates through each element of the array until the target value is found, returning its index. If the target value is not found, it returns -1.
+
+   c. Sorting: Sorting involves arranging the elements of a data structure in a specific order. Let's consider an example of sorting an array using the bubble sort algorithm in Python:
+
+   ```python
+   def bubble_sort(array):
+       n = len(array)
+       for i in range(n):
+           for j in range(n - 1):
+               if array[j] > array[j + 1]:
+                   array[j], array[j + 1] = array[j + 1], array[j]
+
+   array = [50, 30, 10, 40, 20]
+   bubble_sort(array)
+   print(array)  # Output: [10, 20, 30, 40, 50]
+   ```
+
+   The bubble sort algorithm repeatedly compares adjacent elements and swaps them if they are in the wrong order. This process is repeated until the entire array is sorted.
+
+   d. Hashing: Hashing involves mapping data to a fixed-size array called a hash table using a hash function. For example, let's consider implementing a simple hash table in Python to store and retrieve key-value pairs:
+
+   ```python
+   class HashTable:
+       def __init__(self):
+           self.size = 10
+           self.table = [None]
+
+ * self.size
+
+       def hash(self, key):
+           return hash(key) % self.size
+
+       def insert(self, key, value):
+           index = self.hash(key)
+           self.table[index] = value
+
+       def get(self, key):
+           index = self.hash(key)
+           return self.table[index]
+
+   # Usage of the implemented hash table:
+   table = HashTable()
+   table.insert("name", "John")
+   table.insert("age", 25)
+   print(table.get("name"))  # Output: John
+   print(table.get("age"))  # Output: 25
+   ```
+
+   In the above example, we implement a hash table using an array (`self.table`). The `hash` method uses the built-in `hash` function to calculate an index based on the key. The `insert` method stores the value at the calculated index, and the `get` method retrieves the value using the key.
+
+   e. Insertion: Insertion involves adding an element to a data structure. For example, let's consider inserting an element into an array at a specific position in Python:
+
+   ```python
+   def insert_at(array, index, value):
+       array.insert(index, value)
+
+   array = [10, 20, 30, 40, 50]
+   insert_at(array, 2, 25)
+   print(array)  # Output: [10, 20, 25, 30, 40, 50]
+   ```
+
+   The `insert_at` function inserts the `value` at the specified `index` using the `insert` method of the array.
+
+   f. Deletion: Deletion involves removing an element from a data structure. Let's consider deleting an element from an array at a specific position in Python:
+
+   ```python
+   def delete_at(array, index):
+       del array[index]
+
+   array = [10, 20, 30, 40, 50]
+   delete_at(array, 2)
+   print(array)  # Output: [10, 20, 40, 50]
+   ```
+
+   The `delete_at` function removes the element at the specified `index` using the `del` keyword.
+
+   g. Merging: Merging refers to combining two or more data structures into a single structure. Let's consider merging two sorted arrays into a single sorted array in Python:
+
+   ```python
+   def merge_sorted_arrays(arr1, arr2):
+       merged_array = []
+       i = j = 0
+
+       while i < len(arr1) and j < len(arr2):
+           if arr1[i] <= arr2[j]:
+               merged_array.append(arr1[i])
+               i += 1
+           else:
+               merged_array.append(arr2[j])
+               j += 1
+
+       # Add remaining elements from arr1, if any
+       merged_array.extend(arr1[i:])
+
+       # Add remaining elements from arr2, if any
+       merged_array.extend(arr2[j:])
+
+       return merged_array
+
+   array1 = [10, 30, 50]
+   array2 = [20, 40, 60]
+   merged = merge_sorted_arrays(array1, array2)
+   print(merged)  # Output: [10, 20, 30, 40, 50, 60]
+   ```
+
+   The `merge_sorted_arrays` function takes two sorted arrays (`arr1` and `arr2`) and merges them into a single sorted array (`merged_array`).
+
+3. Application:
+   Arrays have various applications in programming, such as:
+
+   a. Storing and accessing collections of data, like a list of student grades, daily temperature readings, or employee salaries
+
+.
+
+   b. Implementing other data structures like stacks, queues, and heaps, where arrays can be used as the underlying storage mechanism.
+
+   c. Sorting and searching algorithms often operate on arrays, allowing efficient organization and retrieval of data.
+
+   d. Hash tables, which use arrays internally, are used for fast key-value pair lookups, making them suitable for applications like caches, databases, and symbol tables.
+
+   e. Arrays can be used in graph algorithms, dynamic programming, and other problem-solving techniques.
