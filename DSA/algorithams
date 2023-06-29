@@ -1,0 +1,17 @@
+Components of algorithms
+
+1.Input Step --> Each and every algorithm is having atleast one input
+2.Assignment Step --> each and every algorithm is having atleast one assignment operator
+3.Decision Step --> if and else(Optional)
+4.Repititive step --> for and while(Optional)
+5.Output Step --> Each and every algorithm is having atleast one output step.
+
+
+Properties of an algorithm:
+
+1. Finiteness --> Algorithm will terminate after a finite number of step
+2. Definitesness --> Algorithm must be Unambigous(clear)
+3. Genarlity --> that algorithm will work for any number of input
+4. Effectiveness --> algorithm is effective if it is taking least time and space complexity then your alogrithm is effective
+5. Input and output
+If any algorithm is following all these properties then that algorithm is a Perfect Algorithm.

@@ -9,10 +9,10 @@ class Graph:
         self.adj_list[u].append(v)
 
     def count_trees(self):
-        visited = [False] * self.V
+        visited = [False] * (self.V + 1)  # Increase the size of visited list by 1
         count = 0
 
-        for v in range(self.V):
+        for v in range(1, self.V + 1):  # Adjust the range of vertices
             if not visited[v]:
                 if self.dfs_util(v, visited):
                     count += 1
