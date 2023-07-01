@@ -156,7 +156,7 @@ class RestaurantApp:
         print("Food Items:")
         self.menu.view_food_items()
 
-        selected_items = input("Enter the numbers of the food items to order (separated by commas): ")
+        selected_items = input("Enter the numbers of the food items to order: ")
         selected_items = [int(item) for item in selected_items.split(",")]
 
         order_items = []
