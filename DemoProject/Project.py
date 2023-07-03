@@ -42,4 +42,30 @@ class TicketInfo:
                         else:
                             print("S",end = " ")
             print()
-    
+
+    def buy_tickets(self):
+        row = int(input("For which row are you planning to book the ticket: "))
+        col = int(input("For which column are you planning to buy the ticket: "))
+        seat_id = str(row) + "-" + str(col)
+        total_seats = self.row * self.col
+        half_seats = total_seats // 2
+        if total_seats < 60 or (total_seats > 60 and row <= half_seats):
+            price = 10
+        else:
+            price = 8
+        
+        if self.seat_status(row,col):
+            print("That seat is already reserved")
+        else:
+            print("Prince of the selected seat is: ",price,'$')
+            choice = input("Enter yes to continue to purchase the ticket")
+            if choice.lower() == 'yes':
+                name = input("Enter your name: ")
+                gender = input("Enter your Gender ")
+                age = input("Enter your age")
+                mobile_number = input("Enter your mobile number")
+                self.user_details[seat_id] = [name,gender,age,mobile_number]
+                print('Your ticket is now reserved, seating id is: ' , seat_id)
+            else:
+                print('No problem visit back soon ..........')
+                
