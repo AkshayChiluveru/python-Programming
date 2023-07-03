@@ -9,3 +9,4 @@ r = int(input("Enter annual interest rate: "))
 t = int(input("Enter time: "))
 a = (p*t*r)/100
 print("Final Amount: " ,a)
+
