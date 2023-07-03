@@ -68,4 +68,21 @@ class TicketInfo:
                 print('Your ticket is now reserved, seating id is: ' , seat_id)
             else:
                 print('No problem visit back soon ..........')
-                
+
+    
+    def statics(self):
+        reserved_ticket = len(self.user_details)
+        percentage = (reserved_ticket / (self.row *self.col)) * 100
+        total = 0
+        for price in self.user_details.values():
+            total += price[4]
+        seats = self.row * self.col 
+        income = 0
+        if seats <= 60:
+            income = seats * 10
+        else:
+            half_seats = (self.row //2) * self.col
+            income = half_seats * 10 + (seats - half_seats) * 8
+        s = 'Number of purchased tickets { } \npercentage of tickets booked'
+        print(s)
+         
