@@ -85,4 +85,9 @@ class TicketInfo:
             income = half_seats * 10 + (seats - half_seats) * 8
         s = 'Number of purchased tickets { } \npercentage of tickets booked'
         print(s)
-         
+
+
+    def user_info(self):
+        pass
+
+     
