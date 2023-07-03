@@ -4,17 +4,17 @@ class TicketInfo:
         self.col = col
         self.user_details = {}
 
-    def option(self,options):
-        if options == 1:
+    def options(self,option):
+        if option == 1:
             self.show_seats()
 
-        elif options == 2:
+        elif option == 2:
             self.buy_tickets()
 
-        elif options == 3:
+        elif option == 3:
             self.statistics()
 
-        elif options == 4:
+        elif option == 4:
             self.user_info()
         else:
             print("Enter a valid option")
@@ -70,7 +70,7 @@ class TicketInfo:
                 print('No problem visit back soon ..........')
 
     
-    def statics(self):
+    def statistics(self):
         reserved_ticket = len(self.user_details)
         percentage = (reserved_ticket / (self.row *self.col)) * 100
         total = 0
@@ -90,4 +90,27 @@ class TicketInfo:
     def user_info(self):
         pass
 
-     
+    def  seat_status(self,row,col):
+        s_id = str(row) + '_' + str(col)
+        if s_id in self.user_details.keys():
+            return True
+        False
+
+
+opt = """1. Show the seats
+2. Buy a Ticket
+3. Statistics
+4. Show booked Tickets User Info
+0. Exit\n"""
+
+
+row = int(input("How many rows available to purchase: "))
+col = int(input("How many columns available to purchase: "))
+
+admin = TicketInfo(row,col)
+while True:
+    user_option = int(input(opt))
+    if user_option == 0:
+        break
+    else:
+        admin.options(user_option)
