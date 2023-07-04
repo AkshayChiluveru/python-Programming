@@ -1,0 +1,12 @@
+{
+  "51": {
+    "trainer_id": 51,
+    "name": "Akshay",
+    "gender": "male",
+    "mobile": 9876543212,
+    "experience": "1",
+    "qualification": "B.Tech",
+    "email_id": "akshay@gmail.com",
+    "password": "12345"
+  }
+}

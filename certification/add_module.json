@@ -1,1 +1,18 @@
-{"13": {"Module_Name": "python", "Duration": "8 weeks", "Topic_Name": ["operators", "functions"]}, "71": {"Module_Name": "mySQL", "Duration": "4 weeks", "Topic_Name": ["select", "group by"]}}
+{
+  "76": {
+    "Module_Name": "python",
+    "Duration": "8 weeks",
+    "Topic_Name": [
+      "operatoe",
+      "functions"
+    ]
+  },
+  "40": {
+    "Module_Name": "mySQL",
+    "Duration": "4 weeks",
+    "Topic_Name": [
+      "selec",
+      "groupby"
+    ]
+  }
+}
