@@ -1,2 +1,49 @@
-json stands for javascript object notation
+# json stands for javascript object notation
 
+# Syntax for Json is very similar to that of a python dictionary.
+# we can see a valid json string in the json file.
+# 1. starts with a curly braces and we have a key
+# and that key is associated with some value 
+# and that case it's an array or a list.
+# and inside of that we have json objects=> keys,values,represent numbers, strings
+
+
+# we need to use double quotes not single quotes
+# that is commonly used for configuration files ans storing some type of data or commonly API's 
+
+
+# we need to import json => built in standard library 
+
+# load the data:
+
+# data = json.loads(json_string)
+# print(data)
+
+# data = json.loads(json_string)
+# print(data,[' keys '][0 #index])
+
+# creating JSON strings
+
+# data = json.loads(json_string)
+# data['test] = True
+
+# new_json = data.dumps(data, #indent =2, sort_keys =True) we can also pass the indentation
+# and we can also sort the keys.
+# print(new_json)
+
+
+# reading a file:
+
+#  with open("data.json" , 'r') as f:
+#     data = json.load(f)
+# print(data)
+
+
+# writing a file
+
+# with open("data.json" , 'r') as f:
+#     data = json.load(f)
+
+# with open("data2.json" , 'w') as f:
+#     json.dump(data ,f)
+# print(data)

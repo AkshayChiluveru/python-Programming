@@ -1,0 +1,64 @@
+{
+    "states": [
+      {
+        "name": "Alaska",
+        "abbreviation": "AK",
+        "area_codes": ["907"]
+      },
+      {
+        "name": "Delaware",
+        "abbreviation": "DE",
+        "area_codes": ["302"]
+      },
+      {
+        "name": "Maine",
+        "abbreviation": "ME",
+        "area_codes": ["207"]
+      },
+      {
+        "name": "Montana",
+        "abbreviation": "MT",
+        "area_codes": ["406"]
+      },
+      {
+        "name": "New Hampshire",
+        "abbreviation": "NH",
+        "area_codes": ["603"]
+      },
+      {
+        "name": "New Mexico",
+        "abbreviation": "NM",
+        "area_codes": ["505", "575"]
+      },
+      {
+        "name": "Rhode Island",
+        "abbreviation": "RI",
+        "area_codes": ["401"]
+      },
+      {
+        "name": "South Dakota",
+        "abbreviation": "SD",
+        "area_codes": ["605"]
+      },
+      {
+        "name": "Utah",
+        "abbreviation": "UT",
+        "area_codes": ["385", "435", "801"]
+      },
+      {
+        "name": "Vermont",
+        "abbreviation": "VT",
+        "area_codes": ["802"]
+      },
+      {
+        "name": "West Virginia",
+        "abbreviation": "WV",
+        "area_codes": ["304", "681"]
+      },
+      {
+        "name": "Wyoming",
+        "abbreviation": "WY",
+        "area_codes": ["307"]
+      }
+    ]
+  }
