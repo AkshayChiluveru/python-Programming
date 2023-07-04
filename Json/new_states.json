@@ -1,0 +1,52 @@
+{
+    "states": [
+        {
+            "name": "Alaska",
+            "abbreviation": "AK"
+        },
+        {
+            "name": "Delaware",
+            "abbreviation": "DE"
+        },
+        {
+            "name": "Maine",
+            "abbreviation": "ME"
+        },
+        {
+            "name": "Montana",
+            "abbreviation": "MT"
+        },
+        {
+            "name": "New Hampshire",
+            "abbreviation": "NH"
+        },
+        {
+            "name": "New Mexico",
+            "abbreviation": "NM"
+        },
+        {
+            "name": "Rhode Island",
+            "abbreviation": "RI"
+        },
+        {
+            "name": "South Dakota",
+            "abbreviation": "SD"
+        },
+        {
+            "name": "Utah",
+            "abbreviation": "UT"
+        },
+        {
+            "name": "Vermont",
+            "abbreviation": "VT"
+        },
+        {
+            "name": "West Virginia",
+            "abbreviation": "WV"
+        },
+        {
+            "name": "Wyoming",
+            "abbreviation": "WY"
+        }
+    ]
+}
