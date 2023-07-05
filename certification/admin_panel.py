@@ -128,10 +128,17 @@ class Admin_panel:
             json.dump(content1, f,indent = 2)
 
 
+    def update_module(self):
+        with open("certification/add_trainer.json", "r") as f:
+            content1 = json.load(f)
+        print(content1)
+
+
 d = Admin_panel()
+d.update_module()
 # print("First batch is: ",d.add_module("python","8 weeks"))
 # print("second batch is: ",d.add_module("mySql","4 weeks"))
-d.remove_module()
+# d.remove_module()
 # print("First batch is: ",d.add_batch("python","deepak","akshay"))
 # print("second batch is: ",d.add_batch("MySql","naveena", "naina"))
 # print("-"*40)
