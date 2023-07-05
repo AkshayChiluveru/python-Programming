@@ -1,18 +1,11 @@
 {
-  "15": {
-    "Module_Name": "python",
-    "Duration": "8 weeks",
-    "Topic_Name": [
-      "operator",
-      "string"
-    ]
-  },
-  "46": {
+  "53": {
     "Module_Name": "mySql",
     "Duration": "4 weeks",
     "Topic_Name": [
-      "select",
-      "groupby"
+      "data",
+      "dsa",
+      "excel"
     ]
   }
 }

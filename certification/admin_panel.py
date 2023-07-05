@@ -112,18 +112,33 @@ class Admin_panel:
             json.dump(self.student_details, f,indent = 2)
             
         return self.student_details
-            
+
+
+    def remove_module(self):
+        with open("certification/add_module.json", "r") as f:
+            content1 = json.load(f)
+        print(content1)
+        for k,v in content1.items():
+            print(f"module_id :{k} data :{v}")
+        module_key = input("Enter the id to remove from the module: ")
+        del content1[module_key]
+        print("module is successfully deleted:")
+        print(content1)
+        with open("certification/add_module.json", "w") as f:
+            json.dump(content1, f,indent = 2)
 
 
 d = Admin_panel()
-print("First batch is: ",d.add_batch("python","deepak","akshay"))
-print("second batch is: ",d.add_batch("MySql","naveena", "naina"))
-print("-"*40)
-print("First batch is: ",d.add_module("python","8 weeks"))
-print("second batch is: ",d.add_module("mySql","4 weeks"))
-print("-"*40)
-print(d.addTrainer())
-print(d.addTrainer())
-print("-"*40)
-print(d.add_student())
-print(d.add_student())
+# print("First batch is: ",d.add_module("python","8 weeks"))
+# print("second batch is: ",d.add_module("mySql","4 weeks"))
+d.remove_module()
+# print("First batch is: ",d.add_batch("python","deepak","akshay"))
+# print("second batch is: ",d.add_batch("MySql","naveena", "naina"))
+# print("-"*40)
+
+# print("-"*40)
+# print(d.addTrainer())
+# print(d.addTrainer())
+# print("-"*40)
+# print(d.add_student())
+# print(d.add_student())
