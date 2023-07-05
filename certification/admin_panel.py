@@ -5,6 +5,7 @@ class Admin_panel:
     def __init__(self):
         self.moduledetails = {}
         self.trainer_details = {}
+        self.batch_details = {}
 
     def admin_login(self,username,password):
         if username == "admin" and password == "admin":
@@ -20,11 +21,12 @@ class Admin_panel:
             topic_list.append(topic)
         moduledata = {
             "Module_Name" : modulename,
-            "Duration" : duration,                "Topic_Name" : topic_list
+            "Duration" : duration,                
+            "Topic_Name" : topic_list
             }
         self.moduledetails[key] = moduledata
         with open("certification/add_module.json", "w") as f:
-            json.dump(self.moduledetails, f,indent = 2)
+            json.dump(self.moduledetails, f,indent =2)
         return self.moduledetails
 
 # d = Admin_panel()
@@ -56,7 +58,28 @@ class Admin_panel:
         return self.trainer_details
     
 
+# d = Admin_panel()
+# d.add_module("python", "8 weeks")
+# d.add_module("mySQL", "4 weeks")
+# d.addTrainer()
+
+
+    def add_batch(self,module,trainer,student):
+        key = random.randint(1,100)
+        batch_data = {
+            "ID": key,
+            "module" : module,
+            "trainer" : trainer,
+            "student" : student
+        }
+        self.batch_details = batch_data
+        with open("certification/add_batch.json", "w") as f:
+            json.dump(self.batch_details, f,indent = 2)
+        return self.batch_details
+    
+
 d = Admin_panel()
 d.add_module("python", "8 weeks")
 d.add_module("mySQL", "4 weeks")
 d.addTrainer()
+d.add_batch("DSA","Akshay","Student")
