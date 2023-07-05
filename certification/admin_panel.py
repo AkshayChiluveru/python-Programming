@@ -161,8 +161,18 @@ class Admin_panel:
             print(f"trainer_id :{k} trainer data :{v}")
             print("\n")
         return content
+    
+    def read_batch(self):
+        with open("certification/add_batch.json", "r") as f:
+            content = json.load(f)
+        
+        for k,v in content.items():
+            print(f"batch_id :{k} batch data :{v}")
+            print("\n")
+        return content
 
 d = Admin_panel()
+d.read_batch()
 # d.read_trainer()
 # d.read_student()
 # d.update_module()
