@@ -1,0 +1,28 @@
+{
+  "6": [
+    {
+      "name": "nithin",
+      "gender": "male",
+      "mobile": "4566789098",
+      "qualification": "MS",
+      "email_id": "nithin@gmail.com",
+      "password": "nithin"
+    },
+    {
+      "name": "naveena",
+      "gender": "female",
+      "mobile": "134342542",
+      "qualification": "Mtech",
+      "email_id": "naveena@gmail.com",
+      "password": "naveena"
+    },
+    {
+      "name": "naina",
+      "gender": "female",
+      "mobile": "5737494141",
+      "qualification": "School",
+      "email_id": "naina@gmail.com",
+      "password": "naina"
+    }
+  ]
+}
