@@ -1,28 +1,54 @@
 {
-  "6": [
+  "23": [
+    {
+      "name": "akshay",
+      "gender": "male",
+      "mobile": "6301902710",
+      "qualification": "btech",
+      "email_id": "akshay@gmail.com",
+      "password": "akshay"
+    },
+    {
+      "name": "deepak",
+      "gender": "male",
+      "mobile": "7330788463",
+      "qualification": "btech",
+      "email_id": "deepak@gmail.com",
+      "password": "deepak"
+    },
     {
       "name": "nithin",
       "gender": "male",
-      "mobile": "4566789098",
+      "mobile": "9988776655",
       "qualification": "MS",
       "email_id": "nithin@gmail.com",
       "password": "nithin"
+    }
+  ],
+  "86": [
+    {
+      "name": "akshay",
+      "gender": "male",
+      "mobile": "6301902710",
+      "qualification": "btech",
+      "email_id": "akshay@gmail.com",
+      "password": "akshay"
     },
     {
-      "name": "naveena",
-      "gender": "female",
-      "mobile": "134342542",
-      "qualification": "Mtech",
-      "email_id": "naveena@gmail.com",
-      "password": "naveena"
+      "name": "deepak",
+      "gender": "male",
+      "mobile": "7330788463",
+      "qualification": "btech",
+      "email_id": "deepak@gmail.com",
+      "password": "deepak"
     },
     {
-      "name": "naina",
-      "gender": "female",
-      "mobile": "5737494141",
-      "qualification": "School",
-      "email_id": "naina@gmail.com",
-      "password": "naina"
+      "name": "nithin",
+      "gender": "male",
+      "mobile": "9988776655",
+      "qualification": "MS",
+      "email_id": "nithin@gmail.com",
+      "password": "nithin"
     }
   ]
 }

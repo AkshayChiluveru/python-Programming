@@ -2,7 +2,7 @@ import json
 import random
 
 class Admin_panel:
-    student_list = []
+    Student_list = []
     def __init__(self):
         self.moduledetails = {}
         self.trainer_details = {}
@@ -96,7 +96,7 @@ class Admin_panel:
             mobile = input("Enter the mobile number: ")
             qualification = input("Enter the Qualification: ")
             email_id = input("Enter the email id: ")
-            password = input("Enter the pass word")
+            password = input("Enter the password: ")
             student_data = {
                 "name" : name,
                 "gender": gender,
@@ -106,10 +106,10 @@ class Admin_panel:
                 "password": password
             }
 
-            Admin_panel.student_list.append(student_data) 
-        self.student_details[key] = Admin_panel.student_list
+            Admin_panel.Student_list.append(student_data) 
+        self.student_details[key] = Admin_panel.Student_list
         with open("certification/add_student.json", "w") as f:
-            json.dump(self.student_details, f,indent = 2)
+            json.dump(self.student_details,f,indent = 2)
             
         return self.student_details
 
@@ -131,21 +131,52 @@ class Admin_panel:
     def update_module(self):
         with open("certification/add_trainer.json", "r") as f:
             content1 = json.load(f)
-        print(content1)
+        for  k,v in content1.items():
+            print(f"trainer_id :{k} data :{v}")
+        trainer_id = input("Enter the trainer id that you want to update: ")
+        trainer_edit = input("Enter which field you want to update: ")
+        trainer_update_value =  input("Enter the updated value: ")
+        content1[trainer_id][trainer_edit] = trainer_update_value 
+        for  k,v in content1.items():
+            print(f"trainer_id :{k} data :{v}")
+        with open("certification/add_trainer.json", "w") as f:
+            json.dump(content1, f,indent=2)
 
+
+
+    def read_student(self):
+        with open("certification/add_student.json", "r") as f:
+            content = json.load(f)
+        
+        for k,v in content.items():
+            print(f"batch_id :{k} student data :{v}")
+            print("\n")
+        return content
+    
+    def read_trainer(self):
+        with open("certification/add_trainer.json", "r") as f:
+            content = json.load(f)
+        
+        for k,v in content.items():
+            print(f"trainer_id :{k} trainer data :{v}")
+            print("\n")
+        return content
 
 d = Admin_panel()
-d.update_module()
-# print("First batch is: ",d.add_module("python","8 weeks"))
-# print("second batch is: ",d.add_module("mySql","4 weeks"))
+# d.read_trainer()
+# d.read_student()
+# d.update_module()
 # d.remove_module()
+
 # print("First batch is: ",d.add_batch("python","deepak","akshay"))
 # print("second batch is: ",d.add_batch("MySql","naveena", "naina"))
 # print("-"*40)
+# print("First batch is: ",d.add_module("python","8 weeks"))
+# print("second batch is: ",d.add_module("mySql","4 weeks"))
+# print("-"*40)
+# print("first batch: ",d.add_student())
+# print("second batch: ",d.add_student())
+# print("-"*40)
+# print(d.addTrainer())
+# print(d.addTrainer())
 
-# print("-"*40)
-# print(d.addTrainer())
-# print(d.addTrainer())
-# print("-"*40)
-# print(d.add_student())
-# print(d.add_student())
