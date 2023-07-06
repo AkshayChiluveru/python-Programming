@@ -18,7 +18,7 @@ class Admin_panel:
         topic_list = []
         key = random.randint(1,100)
         topic_size = int(input("Enter number of topics that you want to add: "))
-        for i in range(topic_size):
+        for i in range(topic_size+1):
             topic = input(f"Enter topic name {i}: ")
             topic_list.append(topic)
         moduledata = {
@@ -37,23 +37,26 @@ class Admin_panel:
 
     def addTrainer(self):
         trainer_id = random.randint(1,100)
-        name = input("enter the name: ")
-        gender = input("Enter the gender: ")
-        mobile = int(input("Enter the mobile: "))
-        experience = input("enter the Experience: ")
-        qualification = input("Enter the Qualification: ")
-        email_id = input("Enter the email id: ")
-        password = input("Enter the pass word")
-        trainer_data = {
-            "trainer_id": trainer_id,
-            "name" : name,
-            "gender": gender,
-            "mobile": mobile,
-            "experience": experience,
-            "qualification": qualification,
-            "email_id": email_id,
-            "password": password
-        }
+        student_size = int(input("Enter the number of students you want to add: "))
+        for i in range(1,student_size+1):
+            print(f"Enter the details of the student {i}: ")
+            name = input("enter the name: ")
+            gender = input("Enter the gender: ")
+            mobile = int(input("Enter the mobile: "))
+            experience = input("enter the Experience: ")
+            qualification = input("Enter the Qualification: ")
+            email_id = input("Enter the email id: ")
+            password = input("Enter the pass word")
+            trainer_data = {
+                "trainer_id": trainer_id,
+                "name" : name,
+                "gender": gender,
+                "mobile": mobile,
+                "experience": experience,
+                "qualification": qualification,
+                "email_id": email_id,
+                "password": password
+            }
         self.trainer_details[trainer_id] = trainer_data
         with open("certification/add_trainer.json", "w") as f:
             json.dump(self.trainer_details, f,indent = 2)
@@ -143,13 +146,12 @@ class Admin_panel:
             json.dump(content1, f,indent=2)
 
 
-
     def read_student(self):
         with open("certification/add_student.json", "r") as f:
             content = json.load(f)
         
         for k,v in content.items():
-            print(f"batch_id :{k} student data :{v}")
+            print(f"Student_id :{k} student Data :{v}")
             print("\n")
         return content
     
@@ -158,7 +160,7 @@ class Admin_panel:
             content = json.load(f)
         
         for k,v in content.items():
-            print(f"trainer_id :{k} trainer data :{v}")
+            print(f"trainer_id :{k} Trainer Data :{v}")
             print("\n")
         return content
     
@@ -167,12 +169,23 @@ class Admin_panel:
             content = json.load(f)
         
         for k,v in content.items():
-            print(f"batch_id :{k} batch data :{v}")
+            print(f"batch_id :{k} Batch Data :{v}")
             print("\n")
         return content
 
+
+    def read_module(self):
+        with open("certification/add_module.json", "r") as f:
+            content = json.load(f)
+        
+        for k,v in content.items():
+            print(f"Module_id :{k} Module Data :{v}")
+            print("\n")
+        return content
+
+
 d = Admin_panel()
-d.read_batch()
+# d.read_batch()
 # d.read_trainer()
 # d.read_student()
 # d.update_module()
