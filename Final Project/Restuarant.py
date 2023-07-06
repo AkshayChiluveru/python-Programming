@@ -92,13 +92,13 @@ class RestaurantMenu:
                 for food_item in self.food_items
             ]
         }
-        with open("fooditem.json", "w") as file:
+        with open("Final project/fooditem.json", "w") as file:
             json.dump(data, file, indent=4)
         print(f"Menu saved to {fooditem}.")
 
     def load_menu_from_json(self, fooditem):
         try:
-            with open("fooditem.json", "r") as file:
+            with open("Final project/fooditem.json", "r") as file:
                 data = json.load(file)
 
             self.food_items = [

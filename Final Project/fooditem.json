@@ -1,0 +1,20 @@
+{
+    "food_items": [
+        {
+            "FoodID": 1,
+            "Name": "chicken",
+            "Quantity": "5",
+            "Price": 200.0,
+            "Discount": 4.0,
+            "Stock": 10
+        },
+        {
+            "FoodID": 2,
+            "Name": "Tandoori",
+            "Quantity": "4",
+            "Price": 220.0,
+            "Discount": 5.0,
+            "Stock": 15
+        }
+    ]
+}
