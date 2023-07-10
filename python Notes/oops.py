@@ -100,3 +100,12 @@
 # z.f1()
 
 
+class Animal: 
+    def __init__(y):
+        print("Constuctor is executed")
+    def f1(x):
+        print("f1-Method Exceuted")
+
+
+x = Animal()
+x.f1()
