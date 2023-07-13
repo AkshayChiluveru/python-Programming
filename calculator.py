@@ -21,5 +21,24 @@ print("4. Divide")
     
 
 while True:
-    choice = float(input("Choose the option from the above"))
-    if choice == '1'
+    choice = input("Choose the option from the above: ")
+    if choice in ('1','2','3','4'):
+        num1 = float(input("enter the number 1: "))
+        num2 = float(input("enter the number 2: "))
+
+        if choice == '1':
+            print(num1, "+", num2, "=", add(num1, num2))
+        
+        elif choice == '2':
+            print(num1, "-", num2, "=", subtract(num1, num2))
+        
+        elif choice == '3':
+            print(num1, "*", num2, "=", multiply(num1, num2))
+        
+        elif choice == '4':
+            print(num1, "/", num2, "=", divide(num1, num2))
+
+        break
+
+    else:
+        print("Invalid Input")
