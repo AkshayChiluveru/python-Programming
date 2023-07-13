@@ -112,10 +112,10 @@
 
 # string pattern program 
 
-# string = input("Enter the string: ")
-# l = len(string)
-# for i in range(l):
-#     for j in range(i+1):
-#         print(string[j], end=" ")
-#     print()
+string = input("Enter the string: ")
+l = len(string)
+for i in range(l):
+    for j in range(i+1):
+        print(string[j], end=" ")
+    print()
 

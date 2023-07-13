@@ -5,11 +5,11 @@
 # 	statements
 # iterable datatypes: strings list tuple set
 
-# l = [11,12,13,14,15]
-# sum = 0
-# for value in l:
-# 	sum = sum + value
-# print(sum)
+l = [11,12,13,14,15]
+sum = 0
+for value in l:
+	sum = sum + value
+print(sum)
 
 #range(5) 0 1 2 3 4
 #range(10,100) 10,11,12,13,14,......,99
@@ -37,20 +37,20 @@
 # else:
 #     print("element not found")	
 
-name = 'Abhishek'
-for i in name:
-  print(i)
-  if(i =="b"):
-    print("This is something special!")
+# name = 'Abhishek'
+# for i in name:
+#   print(i)
+#   if(i =="b"):
+#     print("This is something special!")
     
-colors = ["Red", "Green", "Blue", "Yellow"]
-for color in colors:
-  print(color)
-  for i in color:
-    print(i)
+# colors = ["Red", "Green", "Blue", "Yellow"]
+# for color in colors:
+#   print(color)
+#   for i in color:
+#     print(i)
 
-for k in range(5):
-  print(k+1)
+# for k in range(5):
+#   print(k+1)
   
 # for k in range(1, 20001):
 #   print(k)
@@ -74,8 +74,8 @@ for k in range(5):
 # To fullfill such requierement in more easier manner we need to Iterative Statement(loops).
 
 
-for i in range(10):
-    print("Hello World")
+# for i in range(10):
+#     print("Hello World")
 
 # Note: With the help for loop we can easily print hello world 10 Times by writing 2 lines of
 # statements. and It is more feasible as it increases the readibility of the code
@@ -92,24 +92,24 @@ for i in range(10):
 
 # Python Program to print each and every Character of the Given String
 
-x="Edyoda Digital University"
-for i in x:
-    print(i)
+# x="Edyoda Digital University"
+# for i in x:
+#     print(i)
 
 
 
 # Python Program to print each and every Element of the Given List
 
-x=[10,20,30,40,50]
-for i in x:
-    print(i)
+# x=[10,20,30,40,50]
+# for i in x:
+#     print(i)
 
 
 #Extract all digits of a number
-x="198"
-for i in x:
-    y=int(i)%10
-    print(y)
+# x="198"
+# for i in x:
+#     y=int(i)%10
+#     print(y)
 
 
 # Python Program to find the Factorial of a Number
