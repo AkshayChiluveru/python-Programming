@@ -15,14 +15,9 @@ print(myList)
 # user input
 
 myList = []
-
 user_input = input("Enter elements: ")
-
 elements = user_input.split()
-
 myList.extend(elements)
-
-
 
 print("Array:", myList)
 
