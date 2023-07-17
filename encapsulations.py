@@ -1,10 +1,11 @@
 class demo():
     def __init__(self,a,b):
-        self.__a = a
+        self._a = a
         self._b = b
 
 class demo2(demo):
     def output(self):
+        # print(self._a)
         print(self._b)
 
 
