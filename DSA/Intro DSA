@@ -9,3 +9,17 @@ Data Structures and Algorithms(concept) are independent of any programming langu
 4. python
 5.javaScript....
  
+
+
+Python List:
+ 
+ --> Lists are the inbuilt data structure of python.
+ --> We can store elements of different types in the list.
+ --> Items in the list are enclosed between square brackets and separated by commas.
+ --> We can even nest lists with other data structures like lists, dictionaries, tuples, etc.
+Python Array:
+ 
+ --> Arrays are not the in-built data structure readily available in python.
+ --> We must import the array from the 'array' or 'numpy' module.
+ --> Array stores elements of similar types. If we try to store elements of different types, it will throw an error.
+ --> We can only store elements of the same types in the array.
